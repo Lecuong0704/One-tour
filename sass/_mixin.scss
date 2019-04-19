@@ -1,0 +1,71 @@
+@mixin col-1 {
+  width: 8.333333%;
+  float: left;
+}
+
+@mixin col-2 {
+  width: 16.66666667%;
+  float: left;
+}
+
+@mixin col-3 {
+  width: 25%;
+  float: left;
+}
+
+@mixin col-4 {
+  width: 33.33333%;
+  float: left;
+}
+
+@mixin col-5 {
+  width: 41.6666667%;
+  float: left;
+}
+
+@mixin col-6 {
+  width: 50%;
+  float: left;
+}
+
+@mixin col-7 {
+  width: 58.333333%;
+  float: left;
+}
+
+@mixin col-8 {
+  width: 66.666667%;
+  float: left;
+}
+
+@mixin col-9 {
+  width: 75%;
+  float: left;
+}
+
+@mixin col-10 {
+  width: 83.3333333%;
+  float: left;
+}
+
+@mixin col-11 {
+  width: 91.66666667%;
+  float: left;
+}
+
+@mixin col-12 {
+  max-width: 100%;
+  float: left;
+}
+
+@mixin clear-fix {
+  &:before,
+  &:after {
+    display: block;
+    content: '';
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+@font-face {
+  font-family: Gotham;
+  src: url(../font/Gotham/Gotham/Gotham.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "mixin";
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+body{
+  font-size: 13px;
+}
+.clear-fix{
+  clear: both;
+}
+.wrapper{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1160px;
+  min-width: 320px;
+  width: 100%;
+  @include clear-fix;
+}
+.header-top{
+  background-color: #024d8c;
+  line-height: 33px;
+  color: #fff;
+}
+.header-left{
+  display: inline-block;
+  p{
+    display: inline-block;
+    font-weight: normal;
+  }
+}
+.header-right{
+  float: right;
+}
+.header-login{
+  background-image: url(../img/user.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 16px;
+  margin-top: 7px;
+  display: inline-block;
+  float: right;
+  margin-left: 6px;
+}
+.header-language{
+  float: right;
+  option{
+    font-size: inherit;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+  }
+}
+.line-y{
+  width: 1px;
+  height: 23px;
+  margin-top: 5px;
+  background-color: #8086bf;
+  float: right;
+}
+.select-language{
+  border: none;
+  background-color: #024d8c;
+  color: #fff;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+.select-flag{
+  height: 18px;
+  margin: 7px;
+  float: left;
+}
+.header-menu{
+  @include clear-fix;
+}
+.header-logo{
+  @include col-2;
+  padding: 0 5px;
+  img{
+    width: 100%;
+  }
+}
+.header-nav{
+  @include col-10;
+  padding: 0 5px;
+}
+.header-nav__list{
+  list-style-type: none;
+  text-align: center;
+}
+.header-nav__link{
+  display: inline-block;
+  padding:0 20px;
+  &:hover{
+    border-bottom: #024d8c 2px solid;
+  }
+
+.header-nav__item{
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 17px;
+    color: #333;
+
+}
+
+
+  &:hover .header-menu__sub{
+    display: block;
+    position: absolute;
+    list-style-type: none;
+    background-color: #eee;
+    margin-top: 2px ;
+    a{
+      text-decoration: none;
+      line-height: 30px;
+      font-size: 15px;
+      float: left;
+    }
+  }
+}
+.header-menu__sub{
+  display: none;
+  a{
+    color: #333333;
+    padding: 0 10px;
+    border-top: 1px solid #c3c3c3;
+  }
+}
+.header-btn{
+  display: none;
+}
+.header-phone{
+  display: none;
+}
+.header-banner__contents{
+  display: none;
+}
+.header-banner{
+}
+
+
+@import "main";
+@import "pktour";
+@import "feedback";
+@import "brand";
+@import "footer";
+@import "responsive";

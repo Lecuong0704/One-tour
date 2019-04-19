@@ -1,0 +1,135 @@
+.footer{
+  @include clear-fix;
+  margin-top: 20px;
+}
+.footer-top{
+  background-color: #ffffff;
+  h3{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #111;
+    text-transform: uppercase;
+  }
+  a{
+    text-decoration: none;
+    line-height: 20px;
+    color: #333;
+  }
+}
+.footer-top__box{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  @include clear-fix;
+}
+.footer-box__contents{
+  border-left: 0.5px solid rgba(211, 211, 211, 0.96);
+  padding: 0 15px;
+}
+.footer-top__list{
+  list-style-type: none;
+  overflow: auto;
+}
+.h-210{
+  height: 210px;
+}
+.footer-top__box--425{
+  display: none;
+}
+.clear-padding-border{
+  padding-left: 0;
+  border-left: none !important;
+}
+.medal-w50{
+  @include col-6;
+}
+.medal-bottom{
+  width: 100%;
+}
+.medal-icon{
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+.icon-fb{
+  color: #ffffff;
+  background-color: #537bbd;
+  padding-top: 7px;
+  padding-left: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.icon-tw{
+  color: #ffffff;
+  background-color: #78cdf0;
+  padding-top: 7px;
+  padding-left: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.icon-yt{
+  color: #fff;
+  background-color: #eb5755;
+  padding-top: 7px;
+  padding-left: 7px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.icon-gp{
+  color: #fff;
+  background-color: #eb5755;
+  padding-top: 7px;
+  padding-left: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.footer-bottom{
+  background-color: #343434;
+}
+.footer-bottom__box{
+  @include clear-fix;
+
+}
+.footer-bottom__contents{
+  @include col-8;
+  padding: 20px 80px 20px 0;
+  @include clear-fix;
+  p{
+    color: #ffffff;
+    line-height: 18px;
+  }
+}
+.footer-bottom__title {
+  color: #ffffff;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  img{
+    display: inline-block;
+    float: left;
+    padding-right: 3px;
+  }
+}
+.footer-bottom__right{
+  width: 30%;
+  padding: 50px 20px 20px 20px;
+  float: right;
+  text-align: center;
+  h4{
+    color: #fff;
+  }
+}
+.footer-bottom__logo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}

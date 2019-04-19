@@ -1,0 +1,89 @@
+
+.brand__box{
+  width: 100%;
+  background-image: url(../img/bg_bran.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+
+  @include clear-fix;
+}
+.box{
+  display: inline-block;
+  margin: 40px auto;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 15px;
+  }
+}
+.box-img{
+  width: 106px;
+  height: 106px;
+  background-image: url(../img/img_service_tour_home.png);
+  background-repeat: no-repeat;
+  margin: auto auto 10px auto;
+}
+.exp__img{
+  background-position: 0 0;
+  &:hover{
+    background-position: 0 -132px;
+  }
+}
+.top-ten__img{
+  background-position: -134px 0;
+  &:hover{
+    background-position: -134px -132px;
+  }
+}
+.cus-y__img{
+  background-position: -271px 0;
+  &:hover{
+    background-position: -271px -132px;
+  }
+}
+.best-price__img{
+  background-position: -412px 0;
+  &:hover{
+    background-position: -412px -132px;
+  }
+}
+.like-fb__img{
+  background-position: -550px 0;
+  &:hover{
+    background-position: -550px -132px;
+  }
+}
+.partner{
+  @include clear-fix;
+}
+.partner-wrap{
+  @include col-6;
+  @include clear-fix;
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.partner-text{
+  text-align: center;
+  h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #004175;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+}
+.partner-logo{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}

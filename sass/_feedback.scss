@@ -1,0 +1,106 @@
+.feedback-wrap{
+  @include clear-fix;
+  width: 100%;
+}
+.feedback-box{
+  @include col-6;
+  background-color: #fff;
+  &:hover img{
+    transform: scale(0.9);
+    transition: all 1s;
+  }
+}
+.feedback-img{
+  @include col-5;
+  img{
+    width: 100%;
+
+  }
+}
+.feedback-contents{
+  @include col-7;
+  padding: 10px 10px 25px 10px;
+  position: relative;
+  @include clear-fix;
+  h3{
+    color: #42668c;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+  span{
+    font-weight: bold;
+    position: absolute;
+    font-style: italic;
+    right: 30px;
+    bottom: 0px;
+  }
+  //p{
+  //  font-style: italic;
+  //  padding: 0 15px;
+  //  position: relative;
+  //  &::before{
+  //    content: "";
+  //    width: 12px ;
+  //    height: 12px;
+  //    background-image: url(../img/feedback_af.png) ;
+  //    background-repeat: no-repeat;
+  //    background-position: center;
+  //    -webkit-background-size: cover;
+  //    background-size: cover;
+  //    position: absolute;
+  //    left: 0px;
+  //  }
+  //  &::after{
+  //    content: "";
+  //    width: 12px ;
+  //    height: 12px;
+  //    background-image: url(../img/feedback_bf.png) ;
+  //    background-repeat: no-repeat;
+  //    background-position: center;
+  //    -webkit-background-size: cover;
+  //    background-size: cover;
+  //    position: absolute;
+  //    right: 5px;
+  //    bottom: 0px;
+  //  }
+  //}
+
+}
+.feedback-contents__p--wrap{
+  &::before{
+    content: "";
+    width: 12px ;
+    height: 12px;
+    background-image: url(../img/feedback_af.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    left: 6px;
+  }
+  &::after{
+    content: "";
+    width: 12px ;
+    height: 12px;
+    background-image: url(../img/feedback_bf.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    right: 5px;
+    bottom: 20%;
+  }
+}
+.feedback-contents__p{
+  max-height: 10vw;
+  overflow: hidden;
+  padding: 0 0 0 10px;
+  p{
+    font-style: italic;
+    padding: 0 5px;
+    position: relative;
+  }
+}
